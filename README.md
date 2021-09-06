@@ -2,7 +2,7 @@
 
 ## Notes from the authors
 
-Pytorch/Keras implementation of Fastformer. The pytorch version is written in a huggingface transformers style. The jupyter notebooks contain the quickstart codes for text classification on AG's News (without pretrained word embeddings for simplicity), which can be directly run.  We noticed that in our experiments, NOT all tasks need FFNN, residual connection, layer normalization and even position embedding. For example, we find that in news recommendation, it is better to directly use Fastformer without layer normalization and position embedding. However, in Ad CVR prediction, both position embedding and layer normalization are needed.
+Pytorch/Keras implementation of Fastformer. The keras version only includes the core fastformer attention part. The pytorch version is written in a huggingface transformers style. The jupyter notebooks contain the quickstart codes for text classification on AG's News (without pretrained word embeddings for simplicity), which can be directly run.  We noticed that in our experiments, NOT all tasks need FFNN, residual connection, layer normalization and even position embedding. For example, we find that in news recommendation, it is better to directly use Fastformer without layer normalization and position embedding. However, in Ad CVR prediction, both position embedding and layer normalization are needed.
 
 Keras version: 2.2.4 (may not be compatible with higher versions)
 
